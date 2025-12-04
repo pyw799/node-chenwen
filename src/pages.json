@@ -1,0 +1,154 @@
+{
+  "globalStyle": {
+    "navigationStyle": "default",
+    "navigationBarTitleText": "unibest",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFFFFF"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^fg-(.*)": "@/components/fg-$1/fg-$1.vue",
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#999999",
+    "selectedColor": "#018d71",
+    "backgroundColor": "#F8F8F8",
+    "borderStyle": "black",
+    "height": "50px",
+    "fontSize": "10px",
+    "iconWidth": "24px",
+    "spacing": "3px",
+    "list": [
+      {
+        "iconPath": "/static/tabbar/home.png",
+        "selectedIconPath": "/static/tabbar/homeHL.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/static/tabbar/personal.png",
+        "selectedIconPath": "/static/tabbar/personalHL.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "type": "home",
+      "layout": "default",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "首页",
+        "navigationBarTextStyle": "white"
+      }
+    },
+    {
+      "path": "pages/about/about",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "关于"
+      }
+    },
+    {
+      "path": "pages/login/login",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "开封业务综合平台",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/login/register",
+      "type": "page",
+      "layout": "default",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/login/xqlr",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "开封业务综合平台",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/me/me",
+      "type": "page",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages-index",
+      "pages": [
+        {
+          "path": "clientWrite/clientWrite",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "客户需求填写",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "faile/fail-detail",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "需求处理详情",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "faile/faile",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "挽留失败需求处理",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "success/success",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "挽留成功信息补录",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "todo/todo-detail",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "需求处理详情",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "todo/todo",
+          "type": "page",
+          "layout": "default",
+          "style": {
+            "navigationBarTitleText": "待办事项",
+            "navigationStyle": "custom"
+          }
+        }
+      ]
+    }
+  ]
+}
